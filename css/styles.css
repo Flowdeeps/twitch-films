@@ -42,7 +42,7 @@ canvas {
   position: absolute;
   left: 0;
   width: 250px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .curtain {
@@ -77,9 +77,15 @@ canvas {
   background-color: #000;
   bottom: 0;
   height: 226px;
+  opacity: 1;
   position: absolute;
+  transition: all 1s ease-in;
   width: 100vw;
   z-index: 2;
+}
+
+.stage.open {
+  opacity: 0;
 }
 
 .stage .board {

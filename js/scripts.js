@@ -55,7 +55,7 @@ window.addEventListener("load", function() {
     })
     video.addEventListener("ended", function () {
       addIndex()
-      curtainState()
+      closeCurtains()
       playVideo()
     })
   }
@@ -68,7 +68,7 @@ window.addEventListener("load", function() {
   document.getElementById("next").addEventListener("click", function (e) {
     e.preventDefault()
     addIndex()
-    curtainState()
+    closeCurtains()
     playVideo()
   })
 
@@ -78,31 +78,40 @@ window.addEventListener("load", function() {
   }
   
   video.addEventListener("play", function () {
-    curtainState()
+    openCurtains()
     repositionMe()
     playMe()
   })
 
-  function curtainState() {
-    curtains = document.getElementsByClassName("curtain")
-    stage = document.getElementsByClassName("board")
+  function openCurtains() {
+    let curtains = document.getElementsByClassName("curtain")
     for (let i = 0; i < curtains.length; i++) {
-      if (curtains[i].classList.contains("open")) {
-        curtains[i].classList.remove("open")
-      } else {
-        curtains[i].classList.add("open")
-      }
+      curtains[i].classList.add("open")
     }
-    if (stage[0].classList.contains("open")) {
-      stage[0].classList.remove("open")
-    } else {
+    setTimeout(function() {
+      let stage = document.getElementsByClassName("stage")
       stage[0].classList.add("open")
-    }
+      let board = document.getElementsByClassName("board")
+      board[0].classList.add("open")
+    }, 1500)
+  }
+
+  function closeCurtains() {
+    let curtains = document.getElementsByClassName("curtain")
+    let stage = document.getElementsByClassName("stage")
+    stage[0].classList.remove("open")
+    let board = document.getElementsByClassName("board")
+    board[0].classList.remove("open")
+    setTimeout(function () {
+      for (let i = 0; i < curtains.length; i++) {
+        curtains[i].classList.remove("open")
+      }
+    }, 1500)
   }
 
   document.getElementById("stop").addEventListener("click", function (e) {
     e.preventDefault()
-    curtainState()
+    closeCurtains()
     video.pause()
   })
 
