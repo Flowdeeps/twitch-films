@@ -1,33 +1,76 @@
 window.addEventListener("load", function() {
-  var httpRequest
+
   var data = {}
-  function makeRequest() {
-    httpRequest = new XMLHttpRequest()
-    if (!httpRequest) {
-      console.log("Giving up :( Cannot create an XMLHTTP instance")
+
+  function callList(input) {
+
+    let list = ""
+
+    if (input[0]) {
+      list = "adverts"
+    } else if (input[1]) {
+      list = "cartoons"
+    } else if (input[2]) {
+      list = "movies"
+    } else {
+      console.log("nope")
       return false
     }
-    httpRequest.onreadystatechange = getContents
-    httpRequest.open("GET", "js/playlist.json")
-    httpRequest.send()
-  };
-  
-  function getContents() {
-    try {
-      if (httpRequest.readyState === XMLHttpRequest.DONE) {
-        if (httpRequest.status === 200) {
-          data = JSON.parse(httpRequest.response)
-        } else {
-          console.log("There was a problem with the request.")
+
+    var httpRequest
+    function makeRequest() {
+      httpRequest = new XMLHttpRequest()
+      if (!httpRequest) {
+        console.log("Giving up :( Cannot create an XMLHTTP instance")
+        return false
+      }
+      httpRequest.onreadystatechange = getContents
+      httpRequest.open("GET", "js/" + list + ".json")
+      httpRequest.send()
+    };
+    makeRequest()
+    
+    function getContents() {
+      try {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+          if (httpRequest.status === 200) {
+            data = {}
+            data = JSON.parse(httpRequest.response)
+          } else {
+            console.log("There was a problem with the request.")
+          }
         }
       }
-    }
-    catch (e) {
-      console.log("Caught Exception: " + e.description)
+      catch (e) {
+        console.log("Caught Exception: " + e.description)
+      }
     }
   }
 
-  let index = 0;
+  // advert, cartoon, feature
+  let playState = [1, 0, 0]
+
+  function advancePlayState() {
+    console.log(playState)
+    if (playState[0]) {
+      playState = []
+      playState = [0, 1, 0]
+    }
+    else if (playState[1]) {
+      playState = []
+      playState = [0, 0, 1]
+    }
+    else if (playState[2]) {
+      playState = []
+      playState = [1, 0, 0]
+    }
+    else {
+      playState = []
+      playState = [0, 1, 0]
+    }
+  }
+  
+  callList(playState)
 
   const video = document.createElement("video")
   video.autoplay = true
@@ -35,16 +78,9 @@ window.addEventListener("load", function() {
   const canvas = document.getElementById("canvas")
   const ctx = canvas.getContext("2d")
 
-  function addIndex() {
-    if (index < data.length) {
-      index += 1
-    } else {
-      index = 0
-    }
-  }
-
   function playVideo() {
-    video.src = data[index].url
+    video.src = data[getRand(data.length)].url
+    console.log(video.src)
     video.addEventListener("loadeddata", function () {
       video.play()
       video.width = video.videoWidth
@@ -54,8 +90,9 @@ window.addEventListener("load", function() {
       playMe()
     })
     video.addEventListener("ended", function () {
-      addIndex()
       closeCurtains()
+      advancePlayState()
+      callList(playState)
       playVideo()
     })
   }
@@ -67,8 +104,10 @@ window.addEventListener("load", function() {
 
   document.getElementById("next").addEventListener("click", function (e) {
     e.preventDefault()
-    addIndex()
+    video.pause()
     closeCurtains()
+    advancePlayState()
+    callList(playState)
     playVideo()
   })
 
@@ -82,6 +121,11 @@ window.addEventListener("load", function() {
     repositionMe()
     playMe()
   })
+
+  function getRand(input) {
+    let output = Math.floor(Math.random() * input)
+    return output
+  }
 
   function openCurtains() {
     let curtains = document.getElementsByClassName("curtain")
@@ -124,5 +168,4 @@ window.addEventListener("load", function() {
     repositionMe()
   })
 
-  makeRequest()
 })

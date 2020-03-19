@@ -12,5 +12,7 @@ eg: `cd ~/Projects/twitch-films && python -m http.server`
 
 ## What Next?
 
-* Have two json files, one for feature films, the other for cartoons and alternate between the two.
-* Reload the json files after each movie file has ended so that they can be added to whilst the app is up and running.
+Underline denotes a done enough status
+
+* __Have two json files, one for feature films, the other for cartoons and alternate between the two.__ We have three actually, an advert, a cartoon, and a feature film
+* __Reload the json files after each movie file has ended so that they can be added to whilst the app is up and running.__
