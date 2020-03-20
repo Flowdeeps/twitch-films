@@ -10,9 +10,13 @@ Clone this repo, start a web server in the root, open it in a browser. There are
 
 eg: `cd ~/Projects/twitch-films && python -m http.server`
 
+## Notes
+
+Start the whole thing with a `next video` click in the top right as for some reason it will play the ads twice otherwise.
+
 ## What Next?
 
-Underline denotes a done enough status
+Bold denotes a done enough status
 
 * __Have two json files, one for feature films, the other for cartoons and alternate between the two.__ We have three actually, an advert, a cartoon, and a feature film
 * __Reload the json files after each movie file has ended so that they can be added to whilst the app is up and running.__
