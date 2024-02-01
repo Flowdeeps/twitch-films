@@ -1,38 +1,36 @@
 [
   {
-    "title": "The Fast and The Furious",
-    "url": "https://archive.org/download/TheFastandtheFuriousJohnIreland1954goofyrip/TheFastandtheFuriousJohnIreland1954goofyrip.mp4",
-    "description": "A man wrongly imprisoned for murder (John Ireland) breaks out of jail. He wants to clear his name, but with the police pursuing him, he's forced to take a beautiful young woman, driving a fast sports car, hostage and slip into a cross-border sports car race to try to make it to Mexico before the police get him.",
-    "duration": "1:12:36",
-    "year": "1955",
-    "imdb": "http://imdb.com/title/tt0046969/"
-  },
-  {
     "title": "Voyage to the Planet of Prehistoric Women",
     "url": "https://archive.org/download/VoyagetothePlanetofPrehistoricWomen/VoyagetothePlanetofPrehistoricWomen.mp4",
-    "duration": "1:19:34",
+    "description": "The 1967 film 'Voyage to the Planet of Prehistoric Women' is a science fiction adventure directed by Peter Bogdanovich. It follows astronauts who land on Venus and encounter prehistoric women worshiping a Pterodactyl-like god. The film juxtaposes advanced technology with primitive beliefs, highlighting cultural clashes and communication barriers. Noted for its campy style and B-movie charm, it's a classic example of 1960s sci-fi cinema.",
     "year": "1967",
     "imdb": "http://www.imdb.com/title/tt0063790/"
   },
   {
-    "title": "Utopia",
-    "url": "https://archive.org/download/utopia/Utopia.mp4",
-    "duration": "2:21:59",
-    "year": "1951",
-    "imdb": "https://www.imdb.com/title/tt0042210/"
+    "title": "Last Woman on Earth",
+    "url": "https://archive.org/download/last_woman_on_earth/last_woman_on_earth.mp4",
+    "description": "Ev, her husband Harold, and their friend Martin go scuba diving while on vacation in Puerto Rico. When they surface, they find that everyone on the island has died.",
+    "year": "1960",
+    "imdb": "https://www.imdb.com/title/tt0054017/"
   },
   {
-    "title": "Night of the Living Dead",
-    "url": "https://archive.org/download/Night.Of.The.Living.Dead_1080p/NightOfTheLivingDead_1080p.mp4",
-    "duration": "01:35:06",
+    "title": "End of the World",
+    "url": "https://archive.org/download/EndoftheWorld/EndoftheWorld.mp4",
+    "description": "A scientist discovers signals from space that appear to carry information concerning a series of seemingly unrelated natural disasters, occurring across the globe. Hoping to discover the source of these signals and who's behind them, the scientist and his wife set out on a trek to locate the intended recipient of the signals. What the couple eventually discovers is a small remote convent with occupants who are not really who they appear to be.",
+    "year": "1977",
+    "imdb": "https://www.imdb.com/title/tt0075990/"
+  },
+  {
+    "title": "Destroy All Planets",
+    "url": "https://archive.org/download/Destroy_All_Planets/Destroy_All_Planets.mp4",
+    "description": "Aliens try to take over the world by seizing control of Gamera's brain.",
     "year": "1968",
-    "imdb": "http://www.imdb.com/title/tt0063350/"
+    "imdb": "http://www.imdb.com/title/tt0063000/"
   },
   {
     "title": "Assignment Outer Space",
     "url": "https://archive.org/download/Assignment_Outer_Space/Assignment_Outer_Space.mp4",
     "description": "In the 21st century Ray Peterson, reporter for the Interplanetary News, is assigned to write a story aboard a space station. Tension mounts between Peterson and the station commander, who believes he is in the way, but has orders to leave him alone. Errant spaceship Alpha Two enters the solar system and its photon generators are radiating enough heat to destroy Earth as it approaches. It falls to Peterson to try to figure out a way to enter the spaceship, disarm the generators, and escape before suffocating.",
-    "duration": "1:12:34",
     "year": "1960",
     "imdb": "http://www.imdb.com/title/tt0054330/"
   },
@@ -40,8 +38,119 @@
     "title": "Attack from Space",
     "url": "https://archive.org/download/Attack_From_Space/Attack_From_Space.mp4",
     "description": "Benevolent aliens from the planet Emerald send superhero Starman to protect Earth from invasion by an evil alien race called the Spherions. When Starman arrives on Earth, he discovers a conspiracy involving Earth's top scientists, and he must root out the traitors and also stop the impending alien invasion.",
-    "duration": "1:15:32",
     "year": "1959",
-    "imdb": "https://archive.org/details/Attack_From_Space"
+    "imdb": "https://www.imdb.com/title/tt0230832/"
+  },
+  {
+    "title": "First Spaceship on Venus",
+    "url": "https://archive.org/download/FirstSpaceshipOnVenusMPEG/First_Spaceship_On_Venus.mp4",
+    "description": "A spaceship on a mission to Venus uncovers an increasingly sinister secret.",
+    "year": "1960",
+    "imdb": "http://www.imdb.com/title/tt0053250/"
+  },
+  {
+    "title": "The Yesterday Machine",
+    "url": "https://archive.org/download/TheYesterdayMachine1963/TheYesterdayMachine1963.mp4",
+    "description": "A Nazi scientist invents a time machine enabling him to alter the events of WWII.",
+    "year": "1963",
+    "imdb": "https://www.imdb.com/title/tt0057701/"
+  },
+  {
+    "title": "Things to Come",
+    "url": "https://archive.org/download/THINGSTOCOMEVideoQualityUpgrade/THINGS%20TO%20COME%20video%20quality%20upgrade.mp4",
+    "description": "\"Things to Come\" portrays a speculative future where Everytown, a London-like city, faces a devastating war starting from 1940. Despite pacifist efforts, the war leads to societal collapse and a Dark Ages by 1970, with Everytown under a barbaric warlord's rule.",
+    "year": "1936",
+    "imdb": "https://www.imdb.com/title/tt0028358/"
+  },
+  {
+    "title": "Cosmos: War of the Planets",
+    "url": "https://archive.org/download/Cosmos_War_of_the_Planets/Cosmos_War_of_the_Planets.mp4",
+    "description": "A spaceship intercepts a mysterious message and then crashes on the planet the message is being sent from. There they uncover a force that threatens to take over the Earth.",
+    "year": "1977",
+    "imdb": "https://www.imdb.com/title/tt0149677/"
+  },
+  {
+    "title": "The Day of the Triffids",
+    "url": "https://archive.org/download/TheDayOfTheTriffids/TheDayOfTheTriffids.mp4",
+    "description": "After an unusual meteor shower leaves most of the human population blind, a merchant navy officer must find a way to conquer tall, aggressive plants which are feeding on people and animals.",
+    "year": "1963",
+    "imdb": "https://www.imdb.com/title/tt0055894/"
+  },
+  {
+    "title": "Phantom From Space",
+    "url": "https://archive.org/download/Phantom_From_Space/Phantom_From_Space.mp4",
+    "description": "An alien being lands in Santa Monica. Killing two people who attacked him due to the menacing appearance of his spacesuit, the creature takes it off while being pursued by government authorities, revealing himself to be invisible",
+    "year": "1953",
+    "imdb": "https://www.imdb.com/title/tt0046186/"
+  },
+  {
+    "title": "War of the Robots",
+    "url": "https://archive.org/download/WarOfTheRobots/WarOfTheRobots1978.mp4",
+    "description": "An alien civilization, which facing eminent extinction, kidnaps two famous genetic scientists from Earth. A troop of soldiers is dispatched to combat the humanoid robots and rescue the victims.",
+    "year": "1978",
+    "imdb": "https://www.imdb.com/title/tt0077640/"
+  },
+  {
+    "title": "When Worlds Collide",
+    "url": "https://archive.org/download/when-worlds-collide/When%20Worlds%20Collide.mp4",
+    "description": "As a new star and planet hurtle toward a doomed Earth, a small group of survivalists frantically work to complete the rocket which will take them to their new home.",
+    "year": "1951",
+    "imdb": "https://www.imdb.com/title/tt0044207/"
+  },
+  {
+    "title": "The Phantom Planet",
+    "url": "https://archive.org/download/Phantom_Planet/The_Phantom_Planet.mp4",
+    "description": "A spaceship is drawn towards a planet populated by tiny people where the atmosphere shrinks the astronauts as well.",
+    "year": "1961",
+    "imdb": "http://imdb.com/title/tt0055294/"
+  },
+  {
+    "title": "Aelita: Queen of Mars",
+    "url": "https://archive.org/download/AelitaQueenOfMarsoriginalVersion/AelitaQueenOfMarsoriginalVersion.mp4",
+    "description": "A mysterious global radio message connects engineers Los and Spiridonov. Los, a dreamer, becomes fixated on Aelita, daughter of Mars' ruler Tuskub, who watches him via a telescope. Amidst turmoil, including his wife's murder, Los assumes Spiridonov's identity and constructs a spaceship. Alongside revolutionary Gusev, he journeys to Mars, where they're imprisoned by the totalitarian regime. They initiate a proletarian revolt, which Aelita hijacks to establish her own dictatorship. Disillusioned, Los tries to thwart her. The story blurs reality and fantasy, revealing the truth behind Los's experiences.",
+    "year": "1924",
+    "imdb": "https://www.imdb.com/title/tt0014646/"
+  },
+  {
+    "title": "The Atomic Man",
+    "url": "https://archive.org/download/The_Atomic_Man_1955/The_Atomic_Man_1955.mp4",
+    "description": "A man is fished out of a river and taken to a hospital where he briefly dies. After he revives, it's discovered that he is a nuclear research scientist, has been contaminated with radioactive material, and is oddly uncommunicative. A reporter investigates, and with the help of the scientist's doctor and the police, uncovers a plot to destroy the scientist's work as well as part of London.",
+    "year": "1955",
+    "imdb": "http://www.imdb.com/title/tt0048964/"
+  },
+  {
+    "title": "Wizard of Mars",
+    "url": "https://archive.org/download/HorrorsOfTheRedPlanet/HorrorsOfTheRedPlanet.mp4",
+    "description": "In 1975, astronauts Dorothy, Doc, Charlie, and Steve crash on Mars with minimal supplies. Struggling to survive in a barren landscape with finned maggots and canals, they navigate a golden cavern and weather a storm. Discovering an abandoned Earth ship, they follow a golden road to ancient Martian ruins. Resembling Oz's Flatheads, the Martians, controlled by a collective consciousness named \"Wizard\" demand a small task before allowing the astronauts to leave.",
+    "year": "1965",
+    "imdb": "https://www.imdb.com/title/tt0059920/"
+  },
+  {
+    "title": "Invaders from Space",
+    "url": "https://archive.org/download/InvadersFromSpace/NVEExport.mp4",
+    "description": "A bunch of pernicious salamander men from the planet Kulimon in the Moffit Galaxy plan on taking over Earth by unleashing a lethal plague on mankind. It's up to valiant superhero Starman from the Emerald Planet to save the human race before it's too late.",
+    "year": "1965",
+    "imdb": "https://www.imdb.com/title/tt0048957/"
+  },
+  {
+    "title": "Deluge",
+    "url": "https://archive.org/download/delugeimagequalityupgrade/DELUGE%20image%20quality%20upgrade.mp4",
+    "description": "A massive earthquake strikes the United States, which destroys the West Coast and unleashes a massive flood that threatens to destroy the East Coast as well.",
+    "year": "1933",
+    "imdb": "https://www.imdb.com/title/tt0023938/"
+  },
+  {
+    "title": "Indestructible Man",
+    "url": "https://archive.org/download/Indestructible_Man_movie/Indestructible_Man.mp4",
+    "description": "Charles \"The Butcher\" Benton, a brutal death row inmate gets double-crossed by his crooked lawyer. He gets his chance for revenge when, after he's been executed, a bizarre experiment brings him back to life and more deadly than ever.",
+    "year": "1956",
+    "imdb": "https://www.imdb.com/title/tt0049363/"
+  },
+  {
+    "title": "The Killer Shrews",
+    "url": "https://archive.org/download/The_Killer_Shrews_1959/The_Killer_Shrews.mp4",
+    "description": "On an isolated island, a small group of people is terrorised by giant, voracious shrews in the midst of a hurricane.",
+    "year": "1959",
+    "imdb": "https://www.imdb.com/title/tt0052969/"
   }
 ]

@@ -15,6 +15,23 @@ canvas {
   top: 0;
 }
 
+#info {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  text-align: left;
+  top: calc(100vh - 226px);
+  width: 100vw;
+}
+
+#info dt {
+  font-style: italic;
+  float: left;
+}
+
+#info dd {
+  text-indent: 15px;}
+
 #next {
   height: 250px;
   opacity: 0;
@@ -47,7 +64,7 @@ canvas {
 
 .curtain {
   background: url("../images/curtain.gif") repeat;
-  height: 100vh;
+  height: calc(100vh - 226px);
   position: absolute;
   top: 0;
   transition: all 1s ease-in;
@@ -56,7 +73,7 @@ canvas {
 }
 
 .curtain.left {
-  background-position: top right;
+  background-position: bottom right;
   left: 0;
 }
 
@@ -65,7 +82,7 @@ canvas {
 }
 
 .curtain.right {
-  background-position: top left;
+  background-position: bottom left;
   left: 50%;
 }
 

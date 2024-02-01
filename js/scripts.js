@@ -16,6 +16,7 @@ window.addEventListener("load", function() {
       console.log("nope")
       return false
     }
+<<<<<<< HEAD
 
     var httpRequest
     function makeRequest() {
@@ -39,6 +40,20 @@ window.addEventListener("load", function() {
           } else {
             console.log("There was a problem with the request.")
           }
+=======
+    httpRequest.onreadystatechange = getContents
+    httpRequest.open("GET", "js/playlist.json")
+    httpRequest.send()
+  };
+  
+  function getContents() {
+    try {
+      if (httpRequest.readyState === XMLHttpRequest.DONE) {
+        if (httpRequest.status === 200) {
+          data = shuffle(JSON.parse(httpRequest.response))
+        } else {
+          console.log("There was a problem with the request.")
+>>>>>>> 184976d (Added a lot of films and removed a couple due to rights complaints from Twitch. I'm trying to only use films from this list: https://archive.org/details/feature_films?tab=collection&page=2&and%5B%5D=subject%3A%22sci-fi%22&and%5B%5D=subject%3A%22Sci-Fi%22&and%5B%5D=subject%3A%22sci+fi%22&and%5B%5D=subject%3A%22scifi%22 that are marked as Public Domain)
         }
       }
       catch (e) {
@@ -47,6 +62,7 @@ window.addEventListener("load", function() {
     }
   }
 
+<<<<<<< HEAD
   // advert, cartoon, feature
   let playState = [1, 0, 0]
 
@@ -71,6 +87,28 @@ window.addEventListener("load", function() {
   }
   
   callList(playState)
+=======
+  // this is a Fisher-Yates or Knuth shuffle
+  function shuffle(array) {
+    let currentIndex = array.length, randomIndex;
+
+    // While there remain elements to shuffle.
+    while (currentIndex > 0) {
+
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+  }
+
+  let index = 0;
+>>>>>>> 184976d (Added a lot of films and removed a couple due to rights complaints from Twitch. I'm trying to only use films from this list: https://archive.org/details/feature_films?tab=collection&page=2&and%5B%5D=subject%3A%22sci-fi%22&and%5B%5D=subject%3A%22Sci-Fi%22&and%5B%5D=subject%3A%22sci+fi%22&and%5B%5D=subject%3A%22scifi%22 that are marked as Public Domain)
 
   const video = document.createElement("video")
   video.autoplay = true
@@ -87,6 +125,9 @@ window.addEventListener("load", function() {
       video.height = video.videoHeight
       canvas.width = video.videoWidth
       canvas.height = video.videoHeight
+      video.title = data[index].title
+      video.description = data[index].description
+      video.year = data[index].year
       playMe()
     })
     video.addEventListener("ended", function () {
@@ -111,14 +152,49 @@ window.addEventListener("load", function() {
     playVideo()
   })
 
+  const info = document.getElementById("info");
+  const infoTitle = document.getElementById("title");
+  const infoDuration = document.getElementById("duration");
+  const infoTimestamp = document.getElementById("timestamp");
+  const infoDescription = document.getElementById("description");
+  const infoYear = document.getElementById("year");
+  
+  function retitleMe() {
+    info.style.width = video.videoWidth + "px"
+    info.style.left = (window.innerWidth / 2) - (video.videoWidth / 2) + "px"
+    infoTitle.innerHTML = video.title
+    infoDuration.innerHTML = toHHMMSS(video.duration)
+    infoDescription.innerHTML = video.description
+    infoYear.innerHTML = video.year
+  }
+
   function playMe() {
     ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight)
+    infoTimestamp.innerHTML = toHHMMSS(video.currentTime) + " / "
     setTimeout(playMe, 20)
+  }
+
+  function toHHMMSS(duration) {
+    let seconds = parseInt(duration, 10)
+    let hours = Math.floor(seconds / 3600)
+    let minutes = Math.floor((seconds - (hours * 3600)) / 60)
+    seconds = seconds - (hours * 3600) - (minutes * 60)
+    if (hours < 10) {
+      hours = "0" + hours
+    }
+    if (minutes < 10) {
+      minutes = "0" + minutes
+    }
+    if (seconds < 10) {
+      seconds = "0" + seconds
+    }
+    return hours + ":" + minutes + ":" + seconds
   }
   
   video.addEventListener("play", function () {
     openCurtains()
     repositionMe()
+    retitleMe()
     playMe()
   })
 
@@ -168,4 +244,9 @@ window.addEventListener("load", function() {
     repositionMe()
   })
 
+<<<<<<< HEAD
 })
+=======
+  makeRequest()
+})
+>>>>>>> 184976d (Added a lot of films and removed a couple due to rights complaints from Twitch. I'm trying to only use films from this list: https://archive.org/details/feature_films?tab=collection&page=2&and%5B%5D=subject%3A%22sci-fi%22&and%5B%5D=subject%3A%22Sci-Fi%22&and%5B%5D=subject%3A%22sci+fi%22&and%5B%5D=subject%3A%22scifi%22 that are marked as Public Domain)
