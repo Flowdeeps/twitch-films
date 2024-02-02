@@ -152,5 +152,19 @@
     "description": "On an isolated island, a small group of people is terrorised by giant, voracious shrews in the midst of a hurricane.",
     "year": "1959",
     "imdb": "https://www.imdb.com/title/tt0052969/"
+  },
+  {
+    "title": "Battle Beyond the Sun",
+    "url": "https://archive.org/download/BattleBeyondTheSun/BattleBeyondTheSun.mp4",
+    "description": "The space race is on between two countries. Who's going to land on mars first?",
+    "year": "1959",
+    "imdb": "https://www.imdb.com/title/tt0052969/"
+  },
+  {
+    "title": "The Sky Calls (Nebo zovyot)",
+    "url": "https://archive.org/download/the-sky-calls-1959/The%20Sky%20Calls%20%281959%29.mp4",
+    "description": "Men and women of different backgrounds participate in a pioneering space flight to Mars.",
+    "year": "1959",
+    "imdb": "https://www.imdb.com/title/tt0053103/"
   }
 ]
